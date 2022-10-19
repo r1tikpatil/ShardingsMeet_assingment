@@ -1,0 +1,221 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-items: center;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+.joinChatContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* box-shadow: 0px 0px 17px 1px #1d1f26; */
+  /* background: #f7f7fa; */
+}
+
+.joinChatContainer h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.joinChatContainer input {
+  width: 210px;
+  height: 40px;
+  margin: 7px;
+  border: 2px solid #7c5cbf;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.joinChatContainer button {
+  width: 225px;
+  height: 50px;
+  margin: 7px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  background: #7c5cbf;
+  color: #fff;
+  cursor: pointer;
+}
+
+.joinChatContainer button:hover {
+  background: #6b47b8;
+}
+.joinChatContainer button:active {
+  transform: scale(0.96);
+}
+
+.chat-window {
+  width: 99vw;
+  height: 100vh;
+}
+
+.chat-window p {
+  margin: 0;
+}
+.chat-window .chat-header {
+  height: 45px;
+  border-radius: 6px;
+  background: #263238;
+  position: relative;
+  cursor: pointer;
+}
+.chat-window .chat-header p {
+  display: block;
+  padding: 0 1em 0 2em;
+  color: #fff;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.chat-window .chat-body {
+  height: 77%;
+  border: 1px solid #263238;
+  background: #fff;
+
+  position: relative;
+}
+.chat-window .chat-body .message-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat-window .chat-body .message-container::-webkit-scrollbar {
+  display: none;
+}
+.chat-window .chat-body .message {
+  height: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.chat-window .chat-body .message .message-content {
+  width: auto;
+  height: auto;
+  min-height: 40px;
+  max-width: 80%;
+  background-color: #43a047;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+#you {
+  justify-content: flex-start;
+}
+
+#you .message-content {
+  justify-content: flex-start;
+}
+
+#you .message-meta {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+#other {
+  justify-content: flex-end;
+}
+
+#other .message-content {
+  justify-content: flex-end;
+  background-color: cornflowerblue;
+}
+
+#other .message-meta {
+  justify-content: center;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.chat-window .chat-body .message .message-meta {
+  display: flex;
+  font-size: 12px;
+}
+
+.chat-window .chat-footer {
+  height: auto;
+  border: 1px solid #263238;
+  border-top: none;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-window .chat-footer .input {
+  height: 100%;
+  flex: 85%;
+  border: 0;
+  font-size: 1em;
+  border-right: 1px dotted #607d8b;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+.chat-window .chat-footer .input .ql-toolbar {
+  border: none;
+  background-color: black;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+.chat-window .chat-footer .input .ql-container {
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.chat-window .chat-footer button {
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  font-size: 25px;
+  height: 50%;
+  flex: 5%;
+  padding: 12px;
+  background: #7c5cbf;
+  border: none;
+  color: white;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  margin-left: 2px;
+}
+
+.chat-window .chat-footer button:hover {
+  background: #6b47b8;
+}
+.hide {
+  opacity: 0 !important;
+}
+
+img {
+  cursor: pointer;
+  height: 40%;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
